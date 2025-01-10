@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Variables</title>
+    <link rel="stylesheet" href="/Clase-3/Estilos/1-styles.css">
+</head>
+<body>
+    <p>Ingresa tu nombre</p>
+    <input type="text" id="nombreUsuario">
+    <input type="text" id="apellidoUsuario">
+    <button onclick="saludar()">Saludar</button>
+
+    <script>
+
+        const miEdad = 25;
+
+        function saludar() {
+            let miNombre = document.getElementById('nombreUsuario').value;
+            let miApellido = document.getElementById('apellidoUsuario').value;
+            alert('Hola ' + miNombre + ' ' + miApellido + ' tienes ' + miEdad + ' años');
+        }
+    </script>
+</body>
+</html>

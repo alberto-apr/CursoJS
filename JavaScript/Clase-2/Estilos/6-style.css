@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(29, 29, 29);
+    color: rgb(230, 235, 255);
+}
+
+.principal{
+    font-family: 'Arial', sans-serif;
+}
+
+#informacion{
+    text-align: center;
+}
+
+.titulo{
+    color: rgb(247, 238, 255);
+    font-size: 3em;
+}
+
+a[href]{
+    color: rgb(255, 250, 184);
+}
+
+h1:hover{
+    color: rgb(255, 0, 0);
+}
+
+.principal::first-line{
+    background-color: rgb(99, 99, 99);
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>Ingreso de usuario</title>
+    <link rel="stylesheet" href="/Clase-3/Estilos/1-styles.css">
+</head>
+<body>
+    <p>Ingresa tu nombre</p>
+    <input type="text" id="nombreUsuario">
+    <button onclick="saludar()">Saludar</button>
+
+    <script>
+        function saludar() {
+            alert('Hola' + ' ' + document.getElementById('nombreUsuario').value);
+        }
+    </script>
+</body>
+</html>

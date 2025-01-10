@@ -1,0 +1,16 @@
+div p{
+    color: rgb(78, 105, 90);
+}
+
+ol > li{
+    color: blue;
+    font-weight: bold;
+}
+
+h1 ~ h3{
+    background-color: skyblue;
+}
+
+div p[align="left"]:hover{
+    background-color: rgb(202, 148, 148);
+}

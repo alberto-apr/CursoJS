@@ -1,0 +1,14 @@
+h1 {
+    color: rgb(255, 248, 185);
+    font-family: Arial
+}
+
+p {
+    color: rgb(254, 235, 255);
+    border: 1px; border-style: solid;
+    font-family: Verdana
+}
+
+body {
+    background-color: rgb(37, 37, 37)
+}

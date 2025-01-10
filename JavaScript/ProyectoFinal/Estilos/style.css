@@ -1,0 +1,36 @@
+body{
+    background-color: #333;
+    color: rgb(255, 252, 246);
+}
+.menu{
+    font-size: 15px;
+    text-align: center;
+    background-color: #f0c95f;
+    color: black;
+    border-radius: 1px;
+    padding: 3px;
+}
+
+.menu:hover{
+    font-size: 25px;
+    text-align: center;
+    background-color: #f0c95f;
+    color: black;
+    border-radius: 2px;
+    padding: 6px;
+}
+
+p{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(245, 245, 215);
+}
+
+.imagenTigre:hover{
+    width: 60%;
+}
+
+.acomodo{
+    border-style: solid;
+    border: 10px;
+}

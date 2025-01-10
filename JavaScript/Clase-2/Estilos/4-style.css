@@ -1,0 +1,27 @@
+.normal{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: beige;
+}
+
+.destacado{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(253, 247, 247);
+}
+
+.diferente{
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: salmon;
+}
+
+body{
+    background-color: rgb(41, 41, 41);
+}
