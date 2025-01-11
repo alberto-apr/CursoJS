@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <head>
-    <title>Temporizador</title>
+    <title>Proyecto</title>
     <link rel="stylesheet" href="/Clase-3/Estilos/1-styles.css">
 </head>
-<body onload="comenzarReloj()"> 
-    
-    <input type="number" id="numero" placeholder="Ingrese un número">
-    <button onclick="comenzarTiempo()">Alarma</button>
-    <audio controls src="/Audios/alarma.mp3" type="audio/mpeg">
-        Sonido no habilitado
-    </audio>
+<body onload="tiempoLimite()">
+    <h1 align="center">QUIZ</h1>
+    <div>
+        <p>¿Cual es la capital de Jalisco?</p>
+        <center><input type="text" id="pregunta1"></center>
+    </div>
+    <div>
+        <p>¿Cual es la capital de Nayarit?</p>
+        <center><input type="text" id="pregunta2"></center>
+    </div>
+    <div>
+        <p>¿Cual es la capital de Colima?</p>
+        <center><input type="text" id="pregunta3"></center>
+    </div>
+    <div>
+        <p>¿Cual es la capital de Michoacan?</p>
+        <center><input type="text" id="pregunta4"></center>
+    </div>
+    <div>
+        <p>¿Cual es la capital de Zacatecas?</p>
+        <center><input type="text" id="pregunta5"></center>
+    </div>
+    <center><button class="listo">Listo</button> <button class="reinicio">Reiniciar</button></center>
+    <br>
 
-
-
-
-    <h1 id="actualizarReloj">00:00:00</h1>
-
-
-
+    <div>
+        <h1 align="center" id="horaReloj">00:00:00</h1>
+        <p style="font-size: 10px;
+        margin: 0%;">
+            Tienes 30 segundos para responder
+        </p>
+    </div>
 
     <script>
-        let segundos = document.getElementById("numero");
-        let alarma = document.getElementById("actualizarReloj");
-
-        function comenzarTiempo(){
-            setTimeout(tiempoCumplido, 1000*segundos.value)
-        }
-
-        function tiempoCumplido(){
-            alarma.style.color = "green";
-        }
-
-
-        function comenzarReloj(){
-            
-            setInterval(ticTac,1000);
-        }
-
-        function ticTac(){
-            let tiempoActual = new Date();
-            let hora = tiempoActual.getHours();
-            let minutos = tiempoActual.getMinutes();
-            let segundos = String(tiempoActual.getSeconds()).padStart(2,"0");
- 
-            let textoHora = hora + ":" + minutos + ":" + segundos;
-            alarma.textContent = textoHora;
- 
- 
+        function tiempoLimite(){
+            var tiempo = 30;
+            var intervalo = setInterval(function(){
+                tiempo--;
+                var minutos = Math.floor(tiempo/60);
+                var segundos = tiempo%60;
+                document.getElementById("horaReloj").innerHTML = minutos + ":" + segundos;
+                if(tiempo == 0){
+                    clearInterval(intervalo);
+                    alert("Se acabo el tiempo");
+                }
+            }, 1000);
         }
     </script>
 </body>
