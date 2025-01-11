@@ -29,7 +29,7 @@
     <br>
 
     <div>
-        <h1 align="center" id="horaReloj">00:00:00</h1>
+        <h1 align="center" id="horaReloj">00:00</h1>
         <p style="font-size: 10px;
         margin: 0%;">
             Tienes 30 segundos para responder
@@ -38,17 +38,18 @@
 
     <script>
         function tiempoLimite(){
-            var tiempo = 30;
-            var intervalo = setInterval(function(){
-                tiempo--;
-                var minutos = Math.floor(tiempo/60);
-                var segundos = tiempo%60;
-                document.getElementById("horaReloj").innerHTML = minutos + ":" + segundos;
-                if(tiempo == 0){
-                    clearInterval(intervalo);
-                    alert("Se acabo el tiempo");
-                }
-            }, 1000);
+            setTimeout(tiempoCumplido, 30000);
+            setInterval(ticTac, 1000);
+        }
+        function tiempoCumplido(){
+            alert("Se acabo el tiempo");
+        }
+        function ticTac(){
+            let minutos = "00"
+            let segundos = 30
+            let textoHora = minutos + ":" + segundos;
+            horaReloj.textContent = textoHora;
+            segundos--;
         }
     </script>
 </body>
