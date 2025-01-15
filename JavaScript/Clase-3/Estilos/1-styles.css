@@ -7,8 +7,8 @@ body{
 
 .listo{
     color: rgb(29, 29, 29);
-    background-color: rgb(20, 180, 100);
-    width: 80px;
+    background-color: rgb(249, 255, 252);
+    width: 200px;
     height: 40px;
     border-color: transparent;
     border-radius: 10px;
@@ -51,6 +51,7 @@ div{
     margin: 25px;
 }
 h1{
+    text-align: center;
     font-size: 70px;
     margin: 0%;
 }

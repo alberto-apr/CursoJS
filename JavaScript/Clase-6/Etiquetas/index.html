@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Operadores Logicos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        let ancho = 3;
+        let alto = 4;
+
+        loopExterno:
+
+        for (i = 1; i <= alto; i++) {
+            for(j=1;j<=ancho;j++){
+                document.write(i + '.' + j + '<br>');
+                if(i==2 && j==2){
+                    break loopExterno;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

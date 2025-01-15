@@ -40,16 +40,17 @@
         function tiempoLimite(){
             setTimeout(tiempoCumplido, 30000);
             setInterval(ticTac, 1000);
+            document.getElementById("horaReloj").textContent = "30";
         }
         function tiempoCumplido(){
+            clearInterval(intervaloDeTiempo)
+            document.getElementById("horaReloj").textContent = "00";
             alert("Se acabo el tiempo");
         }
         function ticTac(){
-            let minutos = "00"
-            let segundos = 30
-            let textoHora = minutos + ":" + segundos;
-            horaReloj.textContent = textoHora;
-            segundos--;
+            let tiempo = document.getElementById("horaReloj").textContent;
+
+            document.getElementById("horaReloj").textContent = tiempo - 1;
         }
     </script>
 </body>
